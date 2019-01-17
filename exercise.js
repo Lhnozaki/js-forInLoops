@@ -6,19 +6,20 @@
 }*/
 
 //Here is example of using a for-in loop to iterate through properties of the following object:
-var prepClass = {
-	month: "February",
-	year:  2018,
-	students: 8,
-	roster: ["Cyrus", "Tyler", "May", "Yao", "Ben", "Reese", "Jace", "Sean"],
-	level: "advance",
-	areTheyCool: true
-};
 
-for(var prop in prepClass){ //loop through all the properties in the object
-	console.log(prop); //prints the keys in the object
-	console.log(prepClass[prop]); //prints the values in the object
-}
+// var prepClass = {
+// 	month: "February",
+// 	year:  2018,
+// 	students: 8,
+// 	roster: ["Cyrus", "Tyler", "May", "Yao", "Ben", "Reese", "Jace", "Sean"],
+// 	level: "advance",
+// 	areTheyCool: true
+// };
+
+// for(var prop in prepClass){ //loop through all the properties in the object
+// 	console.log(prop); //prints the keys in the object
+// 	console.log(prepClass[prop]); //prints the values in the object
+// }
 
 
 /*1. Create a function that will take in an object and loop through the properties of that object.
@@ -35,8 +36,13 @@ var donutBox = {
 	types: ["old fashion", "glazed", "chocolate", "jelly-filled", "sprinkles", "red velvet"],
 	taste: "fabulous"
 };
-
-
+ function x (object) {
+	for (var prop in object){
+		console.log(prop);
+	}
+	return object;
+ }
+x(donutBox);
 
 /*2.  Create a function that will take in an object and loop through the properties of that object.
 Console.log the values of the object. Use the donutBox object from the previous exercise above*/
@@ -44,7 +50,13 @@ Console.log the values of the object. Use the donutBox object from the previous 
 /*@param {Object}
 @return {Object}*/
 
-
+function z (object) {
+	for (var prop in object){
+		console.log(object[prop]);
+	}
+	return object;
+}
+z(donutBox);
 
 /*3. Create a function that will take in an object and will delete the taste property from the donutBox object above.*/
 
