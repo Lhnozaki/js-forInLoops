@@ -36,6 +36,7 @@ var donutBox = {
 	types: ["old fashion", "glazed", "chocolate", "jelly-filled", "sprinkles", "red velvet"],
 	taste: "fabulous"
 };
+
  function x (object) {
 	for (var prop in object){
 		console.log(prop);
@@ -63,7 +64,11 @@ z(donutBox);
 /*@param {Object}
 @return {Object}*/
 
-
+function o (object) {
+		delete object.taste;
+ return object;
+}
+console.log(o(donutBox));
 
 /*4. Create a function that will take in an object and will return all the values of the object in an array.*/
 
