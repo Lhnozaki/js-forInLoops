@@ -127,5 +127,13 @@ console.log(L(legend));
 @return {Object}*/
 
 
-
-
+function D(object){
+	for (var prop in object){
+		if (object.hasOwnProperty("occupation")){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+console.log(D(legend));
